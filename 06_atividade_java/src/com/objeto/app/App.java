@@ -1,9 +1,17 @@
 package com.objeto.app;
 
-import 
+import com.objeto.models.Cachoroo;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+       Cachoroo doguinho = new Cachoroo();
+
+       doguinho.comer();
+       doguinho.grunir();
+
+
+
+
     }
 }
