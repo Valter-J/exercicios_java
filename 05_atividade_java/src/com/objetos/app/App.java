@@ -5,26 +5,24 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
 
-
+        Scanner sc = new Scanner(System.in);
 
         String nome;
         double altura;
         double idade;
 
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite seu nome");
         nome = sc.nextLine();
         System.out.println("Digite sua idade");
         altura = sc.nextDouble();        
-        System.out.println("Digite seu nome");
-        idade = sc.nextDouble();        
+        System.out.println("Digite sua altura");
+        idade = sc.nextDouble(); 
         
-
-
-
+        
+        System.out.println("Seu nome é " + nome + "Sua idade é " + idade + "e você tem uma altura de " + altura);
 
         sc.close();
 
