@@ -1,10 +1,22 @@
 package com.objeto.models;
 
-public class Cachoroo extends Animal{
+import com.objeto.repository.Ataques;
 
-    public void comer(){
-        System.out.println("Comendo");
+public class Cachoroo implements Ataques{
+
+
+    @Override
+    public void mordida() {
+        System.out.println("O cachorro morde com a mandibula");
     }
+
+    @Override
+    public void corrida() {
+        System.out.println("O cachorro corre com as 4 patas");
+    }
+
+
+    
 
 
 }
