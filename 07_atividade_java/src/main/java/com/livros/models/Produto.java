@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name= "Produto")
+@Table(name= "produto")
 public class Produto {
 
     @Id
@@ -26,6 +26,7 @@ public class Produto {
 
     @Column(nullable = false)
     private Integer quantidade;
+    
 
     public Long getId() {
         return this.id;
