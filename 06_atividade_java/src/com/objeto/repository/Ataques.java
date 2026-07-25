@@ -7,4 +7,6 @@ public interface Ataques {
     
     void corrida();
 
+    
+
 }

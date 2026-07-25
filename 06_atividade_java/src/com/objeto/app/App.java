@@ -11,6 +11,8 @@ public class App {
 
 
        animais.ataqueAnimal(new Gato());
+       animais.tipoHabbitata(new Gato());
+       animais.TipoEspecie(new Gato());
        animais.ataqueAnimal(new Cachoroo());
 
 
