@@ -13,11 +13,14 @@ public class App {
         ClasseTesteArrays array = new ClasseTesteArrays();
 
 
-        double [] testeArray = null;
+        double [] testeArray = new double[3];
 
 
 
        array.inserirdeArrays(3, testeArray);
+
+
+       System.out.println(testeArray[1]);
 
         sc.close();
 

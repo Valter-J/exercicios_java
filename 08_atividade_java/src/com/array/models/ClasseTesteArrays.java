@@ -21,7 +21,6 @@ public class ClasseTesteArrays {
 
     }
 
-
     public double[] inserirdeArrays(int numeroDeArrays, double[] nomeDoArray ){
 
         Scanner sc = new Scanner(System.in);
