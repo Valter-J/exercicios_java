@@ -1,8 +1,10 @@
 package com.array.app;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 import com.array.models.ClasseTesteArrays;
 import com.array.models.Produto;
-import java.util.Scanner;
 
 public class App {
 
@@ -37,7 +39,7 @@ public class App {
 
         }
 
-        System.out.println(vetor);
+        System.out.println(Arrays.toString(vetor));
 
         sc.close();
 
