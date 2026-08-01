@@ -33,7 +33,10 @@ public class ClasseTesteArrays {
 
         }
 
-        sc.close();
+
+        
+
+        
 
         return nomeDoArray;
 

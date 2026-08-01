@@ -1,29 +1,45 @@
 package com.array.app;
 
 import com.array.models.ClasseTesteArrays;
+import com.array.models.Produto;
 import java.util.Scanner;
 
-
 public class App {
+
     public static void main(String[] args) throws Exception {
-        
 
         Scanner sc = new Scanner(System.in);
 
         ClasseTesteArrays array = new ClasseTesteArrays();
 
+        double[] testeArray = new double[3];
 
-        double [] testeArray = new double[3];
+        array.inserirdeArrays(3, testeArray);
 
+        System.out.println(testeArray[1]);
 
+        
 
-       array.inserirdeArrays(3, testeArray);
+        System.out.println("===================================");
+        System.out.println("Array com classes");
+        System.out.println("Digite a quantidade de arrays");
 
+        int n = sc.nextInt();
 
-       System.out.println(testeArray[1]);
+        sc.nextLine();
+        Produto[] vetor = new Produto[n];
+
+        for (int i = 0; i < vetor.length; i++) {
+            String name = sc.nextLine();
+            double preco = sc.nextDouble();
+            vetor[i] = new Produto(name, preco);
+            sc.nextLine();
+
+        }
+
+        System.out.println(vetor);
 
         sc.close();
-
 
     }
 }
